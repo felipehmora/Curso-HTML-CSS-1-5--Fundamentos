@@ -1,0 +1,119 @@
+<!--
+    Apuntes de HTML del curso de YouTube con Jon Mircha. Yo ya se HTML, pero estoy tomando este curso con el a manera de repaso para mejorar mis habilidades como front end e ir repasando contenidos bases que necesitare mas adelante.
+
+    *Recursos:*
+    
+    🔵 Configuración de VisualStudio Code:
+    ➡️ Artículo - https://jonmircha.com/vscode
+    ➡️ Video - https://www.youtube.com/watch?v=twrKk...
+    ➡️ Atajos Windows - https://code.visualstudio.com/shortcu...
+    ➡️ Atajos Mac - https://code.visualstudio.com/shortcu...
+    🟢 Emmet.io - https://emmet.io/
+
+    🟠 Enlaces de la documentación de HTML:
+  - https://www.w3.org/html/
+  - https://html.spec.whatwg.org/
+  - https://www.w3.org/blog/news/archives...
+  - https://developer.mozilla.org/es/docs...
+    🟠 HTML Reference - https://htmlreference.io/
+-->
+
+<!-- La etiqueta DOCTYPE especifica el tipo de documento que se va a estar trabajando -->
+<!DOCTYPE html>
+<html lang="en"> <!-- El atributo lang especifica el idioma en el que esta escrito el documento HTML--> 
+<head>
+    <!-- Este conjunto de etiquetas se conocen como meta etiquetas y fundamentalmente guardan informacion relacionada al SEO de la pagina -->
+    <meta charset="UTF-8"> <!-- El atributo charset establece el conjunto de caracteres que va a poder interpretar el navegador. Este era util mayoritariamente en navegadores viejos que no soportaban de manera nativa caracteres especiales como la ñ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> </head> <!-- El atributo content sirve para compantibilizar los contenidos de Internet Explorer a Microsoft Edge, Visual Studio Code lo incluye en su autogenerado de estructura HTML con emmet por ser un producto de Microsoft, pero no es un estandar de los documentos HTML -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport es donde se renderiza la parte visible del HTML. Tiene tambien varios atributos como los que estan indicados en este documento que le indican la proporcion que debe tener segun distintos tamaños de pantalla. Es muy importante para lograr un buen responsive design -->
+    <title>Document</title> <!-- Esta etiqueta sera el titulo que aparece en la ventana del navegador y en el buscador. Lo recomendable es que ssea referente al contenido de la pagina y debe contener entre 55 y 65 caracteres -->
+    <meta name="description" content=""> <!-- Esta etiqueta le va a explicar al usuario de que va el contenido de la pagina. Vas a incluir un texto que no rebase los 165 caracteres. Estas dos etiquetas nos van a ayudar mucho a nivel de posicionamiento, ya con esto estamos haciendo SEO a nivel de codigo -->
+</head>
+<>
+    <h2>Aprendiendo HTML</h2>
+
+    <!-- HTML se parece mucho a como si estuvieramos escribiendo en un documento word, porque las etiquetas de texto semanticas son muy similares a la manera en la que se trabajan los textos en esos programas -->
+    <p>Hola, estoy escribiendo mi primer documento HTML</p> <!-- La etiqueta p nos va a permitir poner parrafos en nuestro documento -->
+    <p>Aprendiendo sobre diseño web</p>
+    <hr>
+    <!-- Los encabezados nos van a permitir titularizar nuestro contenido -->
+    <h1>Encabezado de nivel 1 - solo puede existir un h1 por documento HTML</h1> <!-- Los niveles van generando una jerarquia semantica y se visualizan de tamaños diferentes. Por cuestiones de posicionamiento solo debes tener un h1 -->
+    <!-- El h1 es el titulo prinicipal y el que se muestra de mayor tamaño-->
+    <h2>Encabezados HTML </h2>
+    <h3>Encabezado de nivel 3</h3>
+    <h4>Encabezado de nivel 4</h4>
+    <h5>Encabezado de nivel 5</h5>
+    <h6>Encabezado de nivel 6</h6>
+    <hr>
+    <h2>Etiquetas de texto basicas</h2>
+    <p>Un parrafo</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit exercitationem dignissimos soluta alias molestiae, ipsam velit? Doloribus cupiditate velit, perspiciatis nostrum quod, nulla tenetur ex, doloremque reprehenderit distinctio delectus quisquam.</p>
+    <!-- Para colocar textos simulados emmet (extension integrada en Visual Studio Code) nos va a permitir colocar un texto de relleno a partir de la palabra lorem, escribiendo la misma y presionando el tabulador-->
+    <p>Palabras en <b>negrita</b>, <i>italica</i>, <u>subrayado</u>, E=Mc<sup>2</sup>, H<sub>2</sub>O, <mark>marcatexto</mark>, <small>letras pequeñas</small> </p>
+    <hr>
+    <h2>Etiquetas de texto semanticas</h2>
+    <p>
+        <strong>Este texto es importante</strong>, <em>Este texto hace enfasis</em>
+    </p>
+    <blockquote>Yo solo se, que no se nada</blockquote>
+    <cite>Socrates</cite>
+
+    <hr>
+    <h2>Etiquetas de salto</h2>
+
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Incidunt omnis quos vero earum, adipisci, voluptatem, voluptatum eveniet et sequi animi dolorem blanditiis quae a necessitatibus accusamus officia. <br><br> Aliquam, totam impedit. <!-- Por defecto, HTML me coloca los parrafos seguidos. Para generar un espaciado en ellos debo colocar la etiqueta <br> que refiere a un salto de linea. Esta etiqueta es de un solo tag y cada vez que la coloque me va a generar un nuevo salto de linea -->
+    </p>
+
+    <hr> <!-- Esta etiqueta tambien es de un solo tag y me genera una linea horizontal. Esto tambien se puede hacer con CSS, pero la etiqueta hr refiere a un salto semantico de contenido -->
+    <h2>Etiquetas de formateo</h2>
+    <p>
+
+        Tareas por hacer <!-- Si yo pongo el texto con un espaciado, identacion, etc en esta etiqueta no me lo va a respetar-->
+        -Terminar de hacer las hm de Henry
+        -Terminar el curso de Git de Alejandro Herrera
+        -Escribir mi blog
+        
+        <pre> <!-- Si coloco el texto dentro de esta etiqueta <pre> si me va a respetar el formato que le estoy dando, tambien cambia la tipografia porque es una caracteristica de esta etiqueta <pre> -->
+            Tareas por hacer 
+            -Terminar de hacer las hm de Henry
+            -Terminar el curso de Git de Alejandro Herrera
+            -Escribir mi blog
+        </pre>
+    </p>
+    <p>
+      <code> <!-- Con esta etiqueta se le da un formato parecido al del pre y es comos si fuera un codigo-->
+        Este texto esta en formato de codigo
+      </code>  
+    </p>
+
+    <p>
+        <pre>
+            <code>
+                import React from "react";
+                import Title from "./Title";
+
+                function App {
+                    return &ltTitle/&gt; <!-- En este codigo aparecen los pico parentesis o simbolos de mayor que y menor que. Para que el navegador los interprete como parte de ese fragmento de codigo y no como etiquetas que no puede leer hay que escribirlos con na sintaxis diferente, que es la que se muestra en el ejemplo -->
+                    <!-- &lt (littler than), &gt(greather than) -->
+                }
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <h2>Etiquetas semanticas estructurales</h2>
+    <div></div><!-- Es una etiqueta contenedora que no tiene semantica. El problema del manejo de las divs es que no se podia disntiguir bien cuando abria una y cuando cierra otra si no estaba bien identado el codigo -->
+    <header>header - Es la cabecera de un sitio web o de una seccion</header>
+    <main>main - Define la seccion principal del documento, solo puede existir una etiqueta main por documentos</main>
+    <footer>footer - Pie de pagina de un sitio web o de una seccion</footer>
+    <nav>nav - Representa una navegacion</nav><!-- Es decir un conjunto de enlaces que representan un menu de navegacion -->
+    <article>article - Representa una seccion autocontenida (que por si sola se explica)</article>
+    <aside>aside - Representa contenido complementario o secundario</aside>
+    <section>section - Seccion de contenido generico</section>
+    <address>address - Representa una direccion</address><!-- Por ejemplo: Buenos Aires, Avellaneda Florentino Ameghino 920-->
+
+    <!-- La maquetacion es el acomodo de como tenemos el contenido de nuestras secciones y de eso va a depender la semantica -->
+    <!-- Que la <div> no tenga una semantica no quiere decir que no se pueda usar -->
+    
+</body>
+</html>
