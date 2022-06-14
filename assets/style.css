@@ -5,3 +5,8 @@ body{
 h1{
     color: navy;
 }
+
+img{
+    max-width: 100%;
+    height: auto; /*Esta es la regla de CSS para hacer una imagen responsive*/
+}
