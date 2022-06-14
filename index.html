@@ -27,9 +27,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> </head> <!-- El atributo content sirve para compantibilizar los contenidos de Internet Explorer a Microsoft Edge, Visual Studio Code lo incluye en su autogenerado de estructura HTML con emmet por ser un producto de Microsoft, pero no es un estandar de los documentos HTML -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport es donde se renderiza la parte visible del HTML. Tiene tambien varios atributos como los que estan indicados en este documento que le indican la proporcion que debe tener segun distintos tamaños de pantalla. Es muy importante para lograr un buen responsive design -->
     <title>Document</title> <!-- Esta etiqueta sera el titulo que aparece en la ventana del navegador y en el buscador. Lo recomendable es que ssea referente al contenido de la pagina y debe contener entre 55 y 65 caracteres -->
-    <meta name="description" content=""> <!-- Esta etiqueta le va a explicar al usuario de que va el contenido de la pagina. Vas a incluir un texto que no rebase los 165 caracteres. Estas dos etiquetas nos van a ayudar mucho a nivel de posicionamiento, ya con esto estamos haciendo SEO a nivel de codigo -->
+    <meta name="description" content="En esta pagina estamos aprendiendo los fundamentos de HTML con Jon Mircha"> <!-- Esta etiqueta le va a explicar al usuario de que va el contenido de la pagina. Vas a incluir un texto que no rebase los 165 caracteres. Estas dos etiquetas nos van a ayudar mucho a nivel de posicionamiento, ya con esto estamos haciendo SEO a nivel de codigo -->
+    <style>/*Con esta etiqueta vamos a poder colocar estilos en cascada en nuestro documento HTML*/
+        h2{
+            color:orangered; /*con esta clase todas las etiquetas h2 se van a colocar de este color. Hay que utilizar las clases para los estilos y en medida de lo posible evitar los id*/
+        }
+    </style><!--Es una buena practica que la etiqueta styles este en el head-->
+    <!--Ahora la manera mas correcta de aplicar estilos es mediante una hoja de estilos ¿Como se hace?-->
+    <!-- Creas una carpeta que se llame assets y ahi un documento que se llame style.css -->
+    <link rel="stylesheet" href="./assets/style.css"><!-- La eitqueta link sirve para enlazar archivos con el HTML y otros elementos (href significa hyperreferencia)-->
 </head>
-<>
     <h2>Aprendiendo HTML</h2>
 
     <!-- HTML se parece mucho a como si estuvieramos escribiendo en un documento word, porque las etiquetas de texto semanticas son muy similares a la manera en la que se trabajan los textos en esos programas -->
@@ -37,7 +44,9 @@
     <p>Aprendiendo sobre diseño web</p>
     <hr>
     <!-- Los encabezados nos van a permitir titularizar nuestro contenido -->
-    <h1>Encabezado de nivel 1 - solo puede existir un h1 por documento HTML</h1> <!-- Los niveles van generando una jerarquia semantica y se visualizan de tamaños diferentes. Por cuestiones de posicionamiento solo debes tener un h1 -->
+   <!--  <h1 style="background-color:deeppink;">Encabezado de nivel 1 - solo puede existir un h1 por documento HTML</h1> --> <!-- Los niveles van generando una jerarquia semantica y se visualizan de tamaños diferentes. Por cuestiones de posicionamiento solo debes tener un h1 -->
+    <h1>Encabezado de nivel 1 - solo puede existir un h1 por documento HTML</h1> 
+ 
     <!-- El h1 es el titulo prinicipal y el que se muestra de mayor tamaño-->
     <h2>Encabezados HTML </h2>
     <h3>Encabezado de nivel 3</h3>
@@ -114,6 +123,65 @@
 
     <!-- La maquetacion es el acomodo de como tenemos el contenido de nuestras secciones y de eso va a depender la semantica -->
     <!-- Que la <div> no tenga una semantica no quiere decir que no se pueda usar -->
-    
+    <hr>
+    <h2>Etiquetas de bloque VS Etiquetas de linea</h2>
+    <div style="background-color: yellow;">La etiqueta de bloque por excelencia es la div. <br> 
+        Una etiqueta de bloque es aquella que genera saltos de linea con sus etiquetas hermanas
+    </div> <!-- Es un bloque generico de contenido sin carga semantica -->
+    <span style="background-color:blue; color: white;" >La etiqueta de linea por excelencia es la span
+          Una etiqueta de linea solo ocupa el espacio necesario que tiene su contenido
+    </span> <!-- Es un contenedor generico en linea que tampoco tiene carga semantica -->
+    <span style="background-color: red;">Hola, soy otra span</span>
+    <hr>
+    <!-- Prosiguen las formas de poner hojas de estilo en cascada en HTML -->
+    <h2>Estilos en CSS</h2>
+    <!-- La primera opcion consiste en colocar los estilos como atributo de la etiqueta en particular -->
+    <div style="background-color:gray;">Estos son estilos colocados como atributo en una etiqueta</div>
+    <!-- La segunda manera es abriendo en la cabecera una etiqueta style -->
+   <p>
+
+       <pre>
+   
+           <code>
+            &ltDOCTYPE html/&gt
+               &lthtml lang="en"/&gt
+               &lthead/&gt
+                   &ltmeta charset="UTF-8"/&gt
+                   &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"/&gt
+                   &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"/&gt
+                    &ltstyle/&gt
+                    h2{
+                        color:orangered;
+                    }
+                    &lt/style&gt
+                   &lttitle>Document &lttitle/&gt
+               &lt/head/&gt
+               &ltbody/&gt
+                   
+               &lt/body/&gt
+               &lt/html/&gt
+           </code>
+       </pre>
+   </p>
+
+   <hr>
+
+   <h2>Scripts en HTML</h2>
+   <!-- Existen dos formas de incrustar scripts en HTML -->
+   <!-- La primera es mediante la etiqueta script -->
+   <script>
+        alert('Hola, estamos aprendiendo HTML');
+        //Dependiendo del momento tu programancion podra estar en el mismo documento pero lo ideal es que este en archivos distintos
+   </script><!-- La etiqueta script a diferencia de la etiqueta style que de preferencia debia ir al principio del body, esta debe ir al final -->
+   <!-- Necesitamos una etiqueta que nos permita enlazar el documento JavaScript-->
+   <script src="assets/codes.js"></script><!-- Es la misma etiqueta pero con el atributo src-->
+   <p>
+    <pre>
+        <code>
+            &ltscript&gt&lt/script&gt
+            &ltscript src="assets/codes.js"&gt&lt/script&gt
+         </code>
+    </pre>
+   </p>
 </body>
 </html>
