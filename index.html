@@ -11,6 +11,8 @@
     🟢 Emmet.io - https://emmet.io/
     ➡️ CSS Icons - https://css.gg/
     ➡️ SVG Repo - https://www.svgrepo.com/
+    ➡️ https://emojipedia.org/upwards-button/
+
 
 
     🟠 Enlaces de la documentación de HTML:
@@ -40,10 +42,28 @@
     <!-- Creas una carpeta que se llame assets y ahi un documento que se llame style.css -->
     <link rel="stylesheet" href="./assets/style.css"><!-- La eitqueta link sirve para enlazar archivos con el HTML y otros elementos (href significa hyperreferencia)-->
 </head>
-    <h2>Aprendiendo HTML</h2>
+    <h2 id="inicio">Aprendiendo HTML</h2>
 
     <!-- HTML se parece mucho a como si estuvieramos escribiendo en un documento word, porque las etiquetas de texto semanticas son muy similares a la manera en la que se trabajan los textos en esos programas -->
     <p>Hola, estoy escribiendo mi primer documento HTML</p> <!-- La etiqueta p nos va a permitir poner parrafos en nuestro documento -->
+    <h3>Temario del curso</h3>
+    <ul>
+        <li><a href="index.html#encabezados">Encabezados HTML</a></li>
+        <li><a href="index.html#texto-basico">Etiquetas de texto basicas</a></li>
+        <li><a href="index.html#texto-semantico">Etiquetas de texto semanticas</a></li>
+        <li><a href="index.html#etiquetas-salto">Etiquetas de salto</a></li>
+        <li><a href="index.html#etiquetas-formateo">Etiquetas de formateo</a></li>
+        <li><a href="index.html#semanticas-estructurales">Etiquetas semanticas estructurales</a></li>
+        <li><a href="index.html#bloque-linea">Etiquetas de bloque VS Etiquetas de linea</a></li>
+        <li><a href="index.html#estilos">Estilos en CSS</a></li>
+        <li><a href="index.html#scripts-html">Scripts en HTML</a></li>
+        <li><a href="index.html#imagenes">Imagenes en HTML</a></li>
+        <li><a href="index.html#listas-ordenadas">Listas ordenadas</a></li>
+        <li><a href="index.html#listas-desordenadas">Listas desordenadas</a></li>
+        <li><a href="index.html#listas-definicion">Listas de definicion</a></li>
+        <li><a href="index.html#tablas">Tablas</a></li>
+        <li><a href="index.html#enlaces">Enlaces</a></li>
+    </ul>
     <p>Aprendiendo sobre diseño web</p>
     <hr>
     <!-- Los encabezados nos van a permitir titularizar nuestro contenido -->
@@ -51,34 +71,39 @@
     <h1>Encabezado de nivel 1 - solo puede existir un h1 por documento HTML</h1> 
  
     <!-- El h1 es el titulo prinicipal y el que se muestra de mayor tamaño-->
-    <h2>Encabezados HTML </h2>
+    <h2 id="encabezados">Encabezados HTML</h2>
     <h3>Encabezado de nivel 3</h3>
     <h4>Encabezado de nivel 4</h4>
     <h5>Encabezado de nivel 5</h5>
     <h6>Encabezado de nivel 6</h6>
+    <a href="index.html#inicio" style="text-decoration: none;">🔼</a><!--Los emojis son texto planos-->
     <hr>
-    <h2>Etiquetas de texto basicas</h2>
+    <h2 id="texto-basico">Etiquetas de texto basicas</h2>
     <p>Un parrafo</p>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit exercitationem dignissimos soluta alias molestiae, ipsam velit? Doloribus cupiditate velit, perspiciatis nostrum quod, nulla tenetur ex, doloremque reprehenderit distinctio delectus quisquam.</p>
     <!-- Para colocar textos simulados emmet (extension integrada en Visual Studio Code) nos va a permitir colocar un texto de relleno a partir de la palabra lorem, escribiendo la misma y presionando el tabulador-->
     <p>Palabras en <b>negrita</b>, <i>italica</i>, <u>subrayado</u>, E=Mc<sup>2</sup>, H<sub>2</sub>O, <mark>marcatexto</mark>, <small>letras pequeñas</small> </p>
+    <a href="index.html#inicio" style="text-decoration: none;">🔼</a><!--Los emojis son texto planos-->
+
     <hr>
-    <h2>Etiquetas de texto semanticas</h2>
+    <h2 id="texto-semantico">Etiquetas de texto semanticas</h2>
     <p>
         <strong>Este texto es importante</strong>, <em>Este texto hace enfasis</em>
     </p>
     <blockquote>Yo solo se, que no se nada</blockquote>
-    <cite>Socrates</cite>
+    <cite>Socrates</cite><br>
+    <a href="index.html#inicio" style="text-decoration: none;">🔼</a><!--Los emojis son texto planos-->
 
     <hr>
-    <h2>Etiquetas de salto</h2>
+    <h2 id="etiquetas-salto">Etiquetas de salto</h2>
 
     <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Incidunt omnis quos vero earum, adipisci, voluptatem, voluptatum eveniet et sequi animi dolorem blanditiis quae a necessitatibus accusamus officia. <br><br> Aliquam, totam impedit. <!-- Por defecto, HTML me coloca los parrafos seguidos. Para generar un espaciado en ellos debo colocar la etiqueta <br> que refiere a un salto de linea. Esta etiqueta es de un solo tag y cada vez que la coloque me va a generar un nuevo salto de linea -->
     </p>
+    <a href="index.html#inicio" style="text-decoration: none;">🔼</a><!--Los emojis son texto planos-->
 
     <hr> <!-- Esta etiqueta tambien es de un solo tag y me genera una linea horizontal. Esto tambien se puede hacer con CSS, pero la etiqueta hr refiere a un salto semantico de contenido -->
-    <h2>Etiquetas de formateo</h2>
+    <h2 id="etiquetas-formateo">Etiquetas de formateo</h2>
     <p>
 
         Tareas por hacer <!-- Si yo pongo el texto con un espaciado, identacion, etc en esta etiqueta no me lo va a respetar-->
@@ -112,8 +137,10 @@
             </code>
         </pre>
     </p>
+    <a href="index.html#inicio" style="text-decoration: none;">🔼</a>
+
     <hr>
-    <h2>Etiquetas semanticas estructurales</h2>
+    <h2 id="semanticas-estructurales">Etiquetas semanticas estructurales</h2>
     <div></div><!-- Es una etiqueta contenedora que no tiene semantica. El problema del manejo de las divs es que no se podia disntiguir bien cuando abria una y cuando cierra otra si no estaba bien identado el codigo -->
     <header>header - Es la cabecera de un sitio web o de una seccion</header>
     <main>main - Define la seccion principal del documento, solo puede existir una etiqueta main por documentos</main>
@@ -126,18 +153,22 @@
 
     <!-- La maquetacion es el acomodo de como tenemos el contenido de nuestras secciones y de eso va a depender la semantica -->
     <!-- Que la <div> no tenga una semantica no quiere decir que no se pueda usar -->
+        <a href="index.html#inicio" style="text-decoration: none;">🔼</a>
+    
     <hr>
-    <h2>Etiquetas de bloque VS Etiquetas de linea</h2>
+    <h2 id="bloque-linea">Etiquetas de bloque VS Etiquetas de linea</h2>
     <div style="background-color: yellow;">La etiqueta de bloque por excelencia es la div. <br> 
         Una etiqueta de bloque es aquella que genera saltos de linea con sus etiquetas hermanas
     </div> <!-- Es un bloque generico de contenido sin carga semantica -->
     <span style="background-color:blue; color: white;" >La etiqueta de linea por excelencia es la span
           Una etiqueta de linea solo ocupa el espacio necesario que tiene su contenido
     </span> <!-- Es un contenedor generico en linea que tampoco tiene carga semantica -->
-    <span style="background-color: red;">Hola, soy otra span</span>
+    <span style="background-color: red;">Hola, soy otra span</span><br>
+    <a href="index.html#inicio" style="text-decoration: none;">🔼</a>
     <hr>
+
     <!-- Prosiguen las formas de poner hojas de estilo en cascada en HTML -->
-    <h2>Estilos en CSS</h2>
+    <h2 id="estilos">Estilos en CSS</h2>
     <!-- La primera opcion consiste en colocar los estilos como atributo de la etiqueta en particular -->
     <div style="background-color:gray;">Estos son estilos colocados como atributo en una etiqueta</div>
     <!-- La segunda manera es abriendo en la cabecera una etiqueta style -->
@@ -166,10 +197,11 @@
            </code>
        </pre>
    </p>
+   <a href="index.html#inicio" style="text-decoration: none;">🔼</a>
 
    <hr>
 
-   <h2>Scripts en HTML</h2>
+   <h2 id="scripts-html">Scripts en HTML</h2>
    <!-- Existen dos formas de incrustar scripts en HTML -->
    <!-- La primera es mediante la etiqueta script -->
    <script>
@@ -186,8 +218,10 @@
          </code>
     </pre>
    </p>
+   <a href="index.html#inicio" style="text-decoration: none;">🔼</a>
+
    <hr>
-   <h2>Imagenes en HTML</h2>
+   <h2 id="imagenes">Imagenes en HTML</h2>
    <!--  <img src="img/periodic_table.png" alt="Tabla periodica de los elementos HTML" width="600" height="400"> -->
    <!-- Etiqueta que no cierra. El atributo src es la ruta de la imagen y alt es un texto alternativo para cuando la imagen se rompe-->
    <img src="img/periodic_table.png" alt="Tabla periodica de los elementos HTML">   
@@ -203,6 +237,7 @@
         </code>
     </pre>
    </p>
+   <a href="index.html#inicio" style="text-decoration: none;">🔼</a>
    <hr>
    <h2>SVG</h2>
    <!--Los vectores los podemos insertar en una etiquEta img pero son codigo HTML-->
@@ -218,7 +253,7 @@
     </figcaption>
    </figure>
    <hr>
-   <h2>Listas ordenadas</h2><!--Es como si fuera una lista de un procesador de texto-->
+   <h2 id="listas-ordenadas">Listas ordenadas</h2><!--Es como si fuera una lista de un procesador de texto-->
    <h3>Las estaciones del año</h3>
    <ol><!--La etiqueta es ol de ordered list en ingles-->
         <li>Primavera</li><!-- Los elementos de lista se trabajan con li, de list item en ingles -->
@@ -262,8 +297,11 @@
         <li>Otoño</li>
         <li>Invierno</li>
     </ol>
+    
+   <a href="index.html#inicio" style="text-decoration: none;">🔼</a>   
+    
     <hr>
-    <h2>Listas desordenadas</h2>
+    <h2 id="listas-desordenadas">Listas desordenadas</h2>
     <h3>Cosas por hacer</h3>
     <ul><!--Se usa la misma etiqueta list item, en vez de numeros. Aparecen las viñetas-->
         <li>Terminar las hm de Henry</li>
@@ -280,8 +318,9 @@
         <li>Revisar la pagina del pasaporte</li>
         <li>Asistir al pair programming y al stand up</li>
     </ul>
+   <a href="index.html#inicio" style="text-decoration: none;">🔼</a>   
     <hr>
-    <h2>Listas de definicion</h2>
+    <h2 id="listas-definicion">Listas de definicion</h2>
         <dl><!--Se forman con la etiqueta dl definition list, pero tienen una diferencia con las otras listas y es que no se usa el li para sus elementos, se usa otra etiqueta-->
             <dt><!--Se usa dt de definition term para el termino que queremos definir-->
                 HTML
@@ -296,8 +335,9 @@
                 </dt>
             </dt>
         </dl>
+   <a href="index.html#inicio" style="text-decoration: none;">🔼</a>   
     <hr>
-    <h2>Tablas</h2><!--Las tablas se usaban antes como tecnica de maquetacion-->
+    <h2 id="tablas">Tablas</h2><!--Las tablas se usaban antes como tecnica de maquetacion-->
     <table><!--Esta es la etiqueta para definir una tabla-->
         <tr>
             <td><!--Esta etiqueta se usa para el contenido de la tabla. Su nombre viene del ingles table data-->
@@ -378,6 +418,20 @@
             </tfoot>
         </tbody>
     </table>
+   <a href="index.html#inicio" style="text-decoration: none;">🔼</a>   
+
     <hr>
+    <h2 id="enlaces">Enlaces</h2>
+    <a href="hola.html">Este enlace lleva a la pagina hola</a> <br><br><!--Al poner la etiqueta a autmaticamente me pone el atributo href, aqui se colocan enlaces y rutas relativas para el enlace -->
+    <!--Como esta en la misma carpeta se coloca solo el nombre del archivo-->
+    <!--Tambien tenemos enlaces externos-->
+    <a href="https://jonmircha.com/" target="_blank" rel="nofollow">Visita la pagina de mi profe, Jon Mircha</a>
+    <a href="https://jonmircha.com/" target="_blanck" ><!--Le puedes poner enlaces a imagenes de la siguiente manera-->
+        <img src="./img/los-10-sonidos-principales-del-perro.jpg" alt="" style="width: 200;">
+    </a>
+    <a href=""></a><!--Enlaces internos--> <br>
+     <a href="index.html#inicio" style="text-decoration: none;">🔼</a>   
+    <hr>
+
 </body>
 </html>

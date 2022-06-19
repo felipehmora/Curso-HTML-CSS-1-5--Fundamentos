@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;/*Con esta propiedad css le estamos colocando una animacion al scrolling*/
+}
+
 body{
     font-family: sans-serif;
 }
