@@ -11,7 +11,7 @@
     🟢 Emmet.io - https://emmet.io/
     ➡️ CSS Icons - https://css.gg/
     ➡️ SVG Repo - https://www.svgrepo.com/
-    ➡️ https://emojipedia.org/upwards-button/
+    ➡️ Emojis.org - https://emojipedia.org/upwards-button/
 
 
 
@@ -63,6 +63,8 @@
         <li><a href="index.html#listas-definicion">Listas de definicion</a></li>
         <li><a href="index.html#tablas">Tablas</a></li>
         <li><a href="index.html#enlaces">Enlaces</a></li>
+        <li><a href="index.html#elementos-interactivos">Elementos interactivos</a></li>
+        <li><a href="index.html#audio-video">Audio y video</a></li>
     </ul>
     <p>Aprendiendo sobre diseño web</p>
     <hr>
@@ -430,8 +432,39 @@
         <img src="./img/los-10-sonidos-principales-del-perro.jpg" alt="" style="width: 200;">
     </a>
     <a href=""></a><!--Enlaces internos--> <br>
-     <a href="index.html#inicio" style="text-decoration: none;">🔼</a>   
+    
+    <a href="mailto:felipehmoraarg@gmail.com" >Enlace a mi correo electronico</a><!--Estos son protocolos especiales para comunicarnos con otro tipo de enlaces-->
+    <br>
+    <a href="tel:5491122516564">Enlace a mi numero de telefono </a>
+    <a href="index.html#inicio" style="text-decoration: none;">🔼</a>   
+    <br>
+    <a href="https://api.whatsapp.com/send?phone=5491122516564">Enlace hacia whatsapp</a> 
     <hr>
+    <h2 id="elementos-interactivos">Elementos interactivos</h2>
+    <button onclick="alert('Hola, le diste click al boton')">Este es un boton</button><!--A los botones le podemos dar interactividad con JavaScript-->
+    <details>
+        <h3>Titulo del acordeon</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum qui ab hic ex earum tenetur voluptas totam consequuntur est magni consectetur sit sapiente necessitatibus deleniti inventore culpa, at amet. Sequi?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum qui ab hic ex earum tenetur voluptas totam consequuntur est magni consectetur sit sapiente necessitatibus deleniti inventore culpa, at amet. Sequi?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum qui ab hic ex earum tenetur voluptas totam consequuntur est magni consectetur sit sapiente necessitatibus deleniti inventore culpa, at amet. Sequi?</p>
+    </details>
 
+    <details open>
+        <h3>Titulo del acordeon</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum qui ab hic ex earum tenetur voluptas totam consequuntur est magni consectetur sit sapiente necessitatibus deleniti inventore culpa, at amet. Sequi?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum qui ab hic ex earum tenetur voluptas totam consequuntur est magni consectetur sit sapiente necessitatibus deleniti inventore culpa, at amet. Sequi?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum qui ab hic ex earum tenetur voluptas totam consequuntur est magni consectetur sit sapiente necessitatibus deleniti inventore culpa, at amet. Sequi?</p>
+    </details>
+
+    <dialog open>
+        Esto es una ventana modal en HTML
+    </dialog>
+    <a href="index.html#inicio" style="text-decoration: none;">🔼</a>   
+    <hr>
+    <h2 id="audio-video">Audio y Video</h2>
+    <audio src="media/ES_Havana - BLUE STEEL.mp3" controls preload></audio><br>
+
+    <video src="media/VID_20201021_174037.mp4" controls style="width: 480px; height: 480px;" preload></video><br>
+    <a href="index.html#inicio" style="text-decoration: none;">🔼</a>   
 </body>
 </html>
